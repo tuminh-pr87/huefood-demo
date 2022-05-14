@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="menu">
+		<div class="up">
+			<ul>
+				<li class="logo"> <a href="#logo"><img src="images/logo.png"></a></li>
+				<li> <a href="#"><img src="images/icon1.PNG">Trang chủ</a></li>
+				<li> <a href="#"><img src="images/icon2.PNG">Tuyển dụng</a></li>
+				<li> <a href="#"><img src="images/icon3.PNG">Chat</a> </li>
+				<li> <a href="#"><img src="images/icon4.PNG">Đơn hàng</a> </li>
+				<li> <a href="#"><img src="images/icon5.PNG">Thêm</a> </li>
+			</ul>
+		</div>
+		<div class="down">
+			<div class="search">
+				<input type="" name="" placeholder="Tìm kiếm trên Huế Foody">
+				<button>
+					<img src="images/search.png">
+				</button>
+			</div>
+		</div>
+	</div>	
+		
+	<div class="content">
+		
+			<div class="banner">
+				<img id="banner-fade" onclick = "changeImage()" src="images/banner0.png" alt="">
+			</div>
+	
+		
+			<!-- Previos and Next buttons
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<br>
+
+			<div class="dot-icon">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+			</div>
+
+			<br> -->
+		</div>
+		
+		
+		<!-- Làm  tiếp ở đây-->
+		<section class = "dishes" id="dishes">
+			<h3 class="sub-heading">Thực Đơn</h3>
+			<h1 class="heading"> Món Ăn Nổi Tiếng</h1>
+
+			<div class="box-container">
+
+				<div class="box">
+					<a href="#" class="icon-heart"></a>
+					<a href="#" class="icon-eye"></a>
+					<img src="images/dish-1.png" alt="">
+					<p> Bún Bò Huế</p>
+					<div class="stars">
+						<i class="icon-star"></i>
+						<i class="icon-star"></i>
+						<i class="icon-start"></i>
+						<i class="icon-start"></i>
+						<i class="icon-star-half-alt"></i>
+					</div>
+					<span>$15.99</span>
+					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+				</div>
+
+				<div class="box">
+					<a href="#" class="icon-heart"></a>
+					<a href="#" class="icon-eye"></a>
+					<img src="images/dish-2.jpg" alt="">
+					<p>Cơm hến</p>
+					<div class="stars">
+						<i class="icon-star"></i>
+						<i class="icon-star"></i>
+						<i class="icon-start"></i>
+						<i class="icon-start"></i>
+						<i class="icon-star-half-alt"></i>
+					</div>
+					<span>$15.99</span>
+					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+				</div>
+
+				<div class="box">
+					<a href="#" class="icon-heart"></a>
+					<a href="#" class="icon-eye"></a>
+					<img src="images/dish-3.png" alt="">
+					<p>Chè Huế</p>
+					<div class="stars">
+						<i class="icon-star"></i>
+						<i class="icon-star"></i>
+						<i class="icon-start"></i>
+						<i class="icon-start"></i>
+						<i class="icon-star-half-alt"></i>
+					</div>
+					<span>$15.99</span>
+					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+					</div>
+
+				<div class="box">
+					<a href="#" class="icon-heart"></a>
+					<a href="#" class="icon-eye"></a>
+					<img src="images/dish-4.png" alt="">
+					<p>Bánh bèo</p>
+					<div class="stars">
+						<i class="icon-star"></i>
+						<i class="icon-star"></i>
+						<i class="icon-start"></i>
+						<i class="icon-start"></i>
+						<i class="icon-star-half-alt"></i>
+					</div>
+					<span>$15.99</span>
+					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+				</div>
+
+				<div class="box">
+					<a href="#" class="icon-heart"></a>
+					<a href="#" class="icon-eye"></a>
+					<img src="images/dish-5.png" alt="">
+					<p>Bún thịt nướng</p>
+					<div class="stars">
+						<i class="icon-star"></i>
+						<i class="icon-star"></i>
+						<i class="icon-start"></i>
+						<i class="icon-start"></i>
+						<i class="icon-star-half-alt"></i>
+					</div>
+					<span>$15.99</span>
+					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+				</div>
+
+				<div class="box">
+					<a href="#" class="icon-heart"></a>
+					<a href="#" class="icon-eye"></a>
+					<img src="images/dish-6.jpg" alt="">
+					<p>Bánh khoái</p>
+					<div class="stars">
+						<i class="icon-star"></i>
+						<i class="icon-star"></i>
+						<i class="icon-start"></i>
+						<i class="icon-start"></i>
+						<i class="icon-star-half-alt"></i>
+					</div>
+					<span>$15.99</span>
+					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+				</div>
+			</div>
+		</section>	
+	</div>
+
+</body>
+</html>
