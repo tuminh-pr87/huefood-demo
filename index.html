@@ -7,70 +7,64 @@
 	<script src="script.js"></script>
 </head>
 <body>
-	<div class="menu">
-		<div class="up">
-			<ul>
-				<li class="logo"> <a href="#logo"><img src="images/logo.png"></a></li>
-				<li> <a href="#"><img src="images/icon1.PNG">Trang chủ</a></li>
-				<li> <a href="#"><img src="images/icon2.PNG">Tuyển dụng</a></li>
-				<li> <a href="#"><img src="images/icon3.PNG">Chat</a> </li>
-				<li> <a href="#"><img src="images/icon4.PNG">Đơn hàng</a> </li>
-				<li> <a href="#"><img src="images/icon5.PNG">Thêm</a> </li>
+
+<header>
+	<nav>
+		<div class="logo"><a href="#">Huế Foody!</a></div>
+			<ul class="nav-links">
+				<li> <a href="#">Home</a></li>
+				<li> <a href="#">Dish</a></li>
+				<li> <a href="#">About</a> </li>
+				<li> <a href="#">Today's Menu</a> </li>
+				<li> <a href="#">Review</a> </li>
+				<li> <a href="#">Map</a> </li>
 			</ul>
-		</div>
-		<div class="down">
-			<div class="search">
-				<input type="" name="" placeholder="Tìm kiếm trên Huế Foody">
-				<button>
-					<img src="images/search.png">
-				</button>
-			</div>
-		</div>
-	</div>	
-		
-	<div class="content">
-		
-			<div class="banner">
-				<img id="banner-fade" onclick = "changeImage()" src="images/banner0.png" alt="">
-			</div>
+		<div class="icons">
+			<a href="#" class="fas fa-heart"></a>
+			<a href="#" class="fas fa-shopping-cart"></a>
+		</div>	
+	</nav>
 	
-		
-			<!-- Previos and Next buttons
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-			<br>
-
-			<div class="dot-icon">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-			</div>
-
-			<br> -->
+	<div class="search-input">
+		<a href="" target="_blank" hidden></a>
+		<input type="text" placeholder="Type to search..">
+		<div class="autocom-box">
+		 <!-- here list are inserted from javascript -->
 		</div>
+		<div class="icon"><i class="fa fa-search"></i></div>
+	</div>	
+</header>	
 		
-		
-		<!-- Làm  tiếp ở đây-->
-		<section class = "dishes" id="dishes">
-			<h3 class="sub-heading">Thực Đơn</h3>
-			<h1 class="heading"> Món Ăn Nổi Tiếng</h1>
+<div class="content">		
+	<div class="banner">
+		<img id="banner-click" onclick = "changeImage()" src="images/banner0.png" alt="">
+	</div>
+	<br>
+	<div class="dot-icon">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+	</div>
+	<br> 
+	<!-- Làm  tiếp ở đây-->
+	<section class = "dishes" id="dishes">
+		<h3 class="sub-heading">Thực Đơn</h3>
+		<h1 class="heading"> Món Ăn Nổi Tiếng</h1>
 
-			<div class="box-container">
-
-				<div class="box">
-					<a href="#" class="icon-heart"></a>
-					<a href="#" class="icon-eye"></a>
-					<img src="images/dish-1.png" alt="">
-					<p> Bún Bò Huế</p>
-					<div class="stars">
-						<i class="icon-star"></i>
-						<i class="icon-star"></i>
-						<i class="icon-start"></i>
-						<i class="icon-start"></i>
-						<i class="icon-star-half-alt"></i>
-					</div>
+		<div class="box-container">
+			<div class="box">
+				<a href="#" class="heart-icon"></a>
+				<a href="#" class="eye-icon"></a>
+				<img src="images/dish-1.png" alt="">
+				<p> Bún Bò Huế</p>
+				<div class="stars">
+					<i class="icon-star"></i>
+					<i class="icon-star"></i>
+					<i class="icon-start"></i>
+					<i class="icon-start"></i>
+					<i class="icon-star-half-alt"></i>
+				</div>
 					<span>$15.99</span>
-					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+					<a href="#" class="btn">Add to cart</a>
 				</div>
 
 				<div class="box">
@@ -86,7 +80,7 @@
 						<i class="icon-star-half-alt"></i>
 					</div>
 					<span>$15.99</span>
-					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+					<a href="#" class="btn">Add to cart</a>
 				</div>
 
 				<div class="box">
@@ -102,7 +96,7 @@
 						<i class="icon-star-half-alt"></i>
 					</div>
 					<span>$15.99</span>
-					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+					<a href="#" class="btn">Add to cart</a>
 					</div>
 
 				<div class="box">
@@ -118,7 +112,7 @@
 						<i class="icon-star-half-alt"></i>
 					</div>
 					<span>$15.99</span>
-					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+					<a href="#" class="btn">Add to cart</a>
 				</div>
 
 				<div class="box">
@@ -134,7 +128,7 @@
 						<i class="icon-star-half-alt"></i>
 					</div>
 					<span>$15.99</span>
-					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+					<a href="#" class="btn">Add to cart</a>
 				</div>
 
 				<div class="box">
@@ -150,7 +144,7 @@
 						<i class="icon-star-half-alt"></i>
 					</div>
 					<span>$15.99</span>
-					<a href="#" class="btn">Thêm vào giỏ hàng</a>
+					<a href="#" class="btn">Add to cart</a>
 				</div>
 			</div>
 		</section>	

@@ -1,112 +1,96 @@
 *{
 	margin: 0;
-	padding: 0;	
-	font-family: 'Nunito', sans-serif;;
-}
-
-.menu{
-	
-	width: 100%;
-	height: 100px;
-	background-color: rgb(255, 186, 0);
-}
-.up{
-
-	width: 75%;
-	height: 52px;
-	margin: 0px auto;
-}
-.up ul{
-	list-style: none;
-
-}
-.up ul li{
-	display: inline-block;
-	padding:0px 24px;
-}
-.up ul li a{
+	padding: 0;		
 	text-decoration: none;
-	font-size: 0.875rem;
-	font-weight: normal;
-	color: black;
+	list-style: none;
+	box-sizing: border-box;
 }
-.up ul li a img{
-	vertical-align: middle;
-	padding: 4px;
+body{
+	font-family: 'montserrat';
 }
-.logo a img{
-	margin-right: 100px;
+header{
+	background: rgb(255, 186, 0);
+	height: 100px;
+	width: 100%;
+	
 }
-.down{
-	height: 50px;
-	width: 80%;
-	margin: 0 auto;
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	
 }
-.search{
-	height: 36px;
-	width: 585px;
-	background-color: white;
-	margin-left: 70px;
-	border-radius: 5px;
-}
-.search input{
-	width: 480px;
-	height: 35px;
-	border: 0px;
-	padding-left: 20px;
-	font-size: 15px;
-	border-radius: 5px;
 
+.logo a {
+	color:#ac0f0f;
+	font-size:20px ;
+	font-family: "UTM Aristote";
 }
-.search button{
-	
-	border: 0px;
-	
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
 	
 }
-.search button img{
-	width: 20px;
-	height: auto;
-	padding-left: 50px ;
-	vertical-align: middle;
+.nav-links a{
+	color: #000;
+	
+}
+.icons a{
+	color: #ac0f0f;
+	padding: 0 5px;
+	font-size:x-large;
 	
 } 
-.banner{
-	max-width: 100%;
+
+.search-input{
+	background: #fff;
+	width: 40%;
+	border-radius: 5px;
 	position: relative;
-  	margin: auto;
+	box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+	height: auto;
+	margin-left: 150px;
+  }
+  
+  .search-input input{
+	height: 40px;
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 0 60px 0 20px;
+	font-size: 18px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  .search-input .icon{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	color: #000;
+	cursor: pointer;
+  }
+
+.banner img{
+	width: 100%;
+	
 }
 .dishes .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap:1.5rem;
 }
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 16px;
-	margin-top: -22px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
-  }
-  .dot {
+
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -115,15 +99,12 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  
 }
-.active, .dot:hover {
+.dot:hover {
 	background-color: #717171;
   	animation-name:fade;
   	animation-duration:1.5s;
-  }
-  @keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
   }
   
 .dishes .box-container .box{
