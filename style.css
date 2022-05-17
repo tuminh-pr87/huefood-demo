@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 body{
-	font-family: 'montserrat';
+	font-family: 'Roboto Condensed';
 }
 header{
 	background: rgb(255, 186, 0);
@@ -19,6 +19,7 @@ nav{
 	justify-content: space-around;
 	align-items: center;
 	min-height: 8vh;
+	transform: scale(1.2);
 	
 }
 
@@ -37,6 +38,7 @@ nav{
 .nav-links a{
 	color: #000;
 	font-weight:500;
+	
 }
 .nav-links a:hover{
 	color:#000;
@@ -72,7 +74,6 @@ nav{
 	padding: 0 60px 0 20px;
 	font-size: 18px;
 	box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
-	font-family: 'Poppins', sans-serif;
   }
   
   .search-input .icon{
@@ -92,11 +93,6 @@ nav{
 	width: 100%;
 	
 }
-.dishes .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap:1.5rem;
-}
 
 .dot {
   cursor: pointer;
@@ -114,77 +110,73 @@ nav{
   	animation-name:fade;
   	animation-duration:1.5s;
   }
-  
+
+  .dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap:20px;
+	margin: 20px;
+}
+
 .dishes .box-container .box{
     padding:2.5rem;
-    background:#fff;
-    border-radius: .5rem;
-    border:.1rem solid rgba(0,0,0,.2);
-    box-shadow: var(--box-shadow);
+    background:rgb(228, 243, 223);
+    border-radius: 20px;
+    border:1rem solid rgb(228, 243, 223);
+    box-shadow: var(box-shadow);
     position: relative;
     overflow: hidden;
     text-align: center;
+	
+}
+.box:hover{
+	cursor: pointer;
+	transform: scale(1.01);
+	transition: .6s;
+}
+.dishes .box-container .box p{
+	font-size: 25px;
+	cursor: pointer;
+}
+.fa{
+	font-size: 25px;
+	transition: .4px;
+	color:rgb(34, 139, 34);
+	
+}
+.checked{
+	color: rgb(256,222,0);
 }
 
-.dishes .box-container .box .icon-heart,
-.dishes .box-container .box .icon-eye{
-    position: absolute;
-    top:1.5rem;
-    background:#eee;
-    border-radius: 50%;
-    height: 5rem;
-    width:5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    color:var(--black);
+.fa:hover{
+	transform: scale(1.3);
+	transition: .6s;
 }
-
-.dishes .box-container .box .icon-heart:hover,
-.dishes .box-container .box .icon-eye:hover{
-    background: var(--green);
-    color:#fff;
+.box a.fa{
+	font-size: 40px;
+	color:#bc3b80;
 }
-
-.dishes .box-container .box .icon-heart{
-    right:-15rem;
-}
-
-.dishes .box-container .box .icon-eye{
-    left:-15rem;
-}
-
-.dishes .box-container .box:hover .icon-heart{
-    right:1.5rem;
-}
-
-.dishes .box-container .box:hover .icon-eye{
-    left:1.5rem;
-}
-
 .dishes .box-container .box img{
     height:17rem;
     margin:1rem 0;
 }
 
-.dishes .box-container .box h3{
-    color:var(--black);
-    font-size: 2.5rem;
-}
-
-.dishes .box-container .box .stars{
-    padding:1rem 0;
-}
-
-.dishes .box-container .box .stars i{
-    font-size: 1.7rem;
-    color:var(--green);
-}
-
 .dishes .box-container .box span{
-    color:var(--green);
     font-weight: bolder;
+	color: #ac0f0f;
     margin-right: 1rem;
     font-size: 2.5rem;
+}
+.dishes .box-container .box a.btn{
+	border:solid 6px rgb(256,222,0);
+	background: rgb(256,222,0);
+	color: #ac0f0f;
+	font-weight: bold;
+	font-size: 25px;
+	/* transform: scale(1.3); */
+	transition: .4s;
+	border-radius: 10px;
+	padding: 3px;
 }
 
 
