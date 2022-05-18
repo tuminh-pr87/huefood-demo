@@ -55,7 +55,7 @@ nav{
 	color: #ac0f0f;
 	padding: 0 5px;
 	font-size:x-large;
-	
+
 } 
 
 .search-input{
@@ -196,12 +196,16 @@ nav{
 }
 
 .fa:hover{
-	transform: scale(1.3);
+	transform: scale(1.5);
 	transition: .6s;
 }
+.box a{
+	
+}
 .box a.fa{
-	font-size: 40px;
+	font-size: 3rem;
 	color:#bc3b80;
+	margin: 0 .5rem;
 }
 
 .info {
