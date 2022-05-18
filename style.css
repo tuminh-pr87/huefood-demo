@@ -173,16 +173,19 @@ nav{
 	transform: scale(1.01);
 	transition: .6s;
 }
-.sub-heading,.heading{
+.sub-heading{
 	text-align: center;
-	font-family: 'Times',serif;
+	font-size: 30px;;
 	font-weight:lighter;
+	letter-spacing: .2ch;
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+	outline: 2px ridge rgba(170, 50, 220, .6);
+	border-radius: 2rem;
+	margin: 1rem;
 	
 }
-.sub-heading{
-	font-size: 30px;
-}	
-	
+
 .fa{
 	font-size: 25px;
 	transition: .4px;
