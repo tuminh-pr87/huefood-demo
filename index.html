@@ -3,7 +3,8 @@
 <head>
 	<title>Hue Foody</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="script.js"></script>
 </head>
 <body>
@@ -37,7 +38,7 @@
 		
 <div class="content">		
 	<div class="banner">
-		<img id="banner-click" onclick = "changeImage()" src="images/banner0.png" alt="">
+		<img id="banner-click" onclick = "changeImage1()" src="images/banner0.png" alt="">
 	</div>
 	<br>
 	<div class="dot-icon">
@@ -53,7 +54,7 @@
 		<div class="box-container">
 			<div class="box">
 				<a href="#" class="fa fa-heart"></a>
-				<a href="#" class="fa fa-thumbs-up"></a>
+				<a href="#" class="fa fa-thumbs-o-up"></a>
 				<img src="images/dish-1.png" alt="">
 				<p> Bún Bò Huế</p>
 				<div class="stars">
@@ -64,13 +65,13 @@
 					<i class="fa fa-star checked"></i>
 					<i class="fa fa-star-half-alt"></i>
 				</div>
-					<span>$15.99</span>
+					<span>50.000&#8363;</span>
 					<a href="#" class="btn">Add to cart</a>
 				</div>
 
 				<div class="box">
 					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-up"></a>
+					<a href="#" class="fa fa-thumbs-o-up"></a>
 					<img src="images/dish-2.png" alt="">
 					<p>Cơm hến</p>
 					<div class="stars">
@@ -81,13 +82,13 @@
 						<i class="fa fa-star checked"></i>
 						<i class="fa fa-star-half-alt"></i>
 					</div>
-					<span>$15.99</span>
+					<span>50.000&#8363;</span>
 					<a href="#" class="btn">Add to cart</a>
 				</div>
 
 				<div class="box">
 					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-up"></a>
+					<a href="#" class="fa fa-thumbs-o-up"></a>
 					<img src="images/dish-3.png" alt="">
 					<p>Chè Huế</p>
 					<div class="stars">
@@ -98,13 +99,13 @@
 						<i class="fa fa-star checked"></i>
 						<i class="fa fa-star-half-alt"></i>
 					</div>		
-					<span>$15.99</span>
+					<span>50.000&#8363;</span>
 					<a href="#" class="btn">Add to cart</a>
 					</div>
 
 				<div class="box">
 					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-up"></a>
+					<a href="#" class="fa fa-thumbs-o-up"></a>
 					<img src="images/dish-4.png" alt="">
 					<p>Bánh bèo</p>
 					<div class="stars">
@@ -116,14 +117,14 @@
 						<i class="fa fa-star-half-alt"></i>
 					</div>
 					<div class="order">
-						<span>$15.99</span>
+						<span>50.000&#8363;</span>
 						<a href="#" class="btn">Add to cart</a>
 					</div>
 				</div>
 
 				<div class="box">
 					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-up"></a>
+					<a href="#" class="fa fa-thumbs-o-up"></a>
 					<img src="images/dish-5.png" alt="">
 					<p>Bún thịt nướng</p>
 					<div class="stars">
@@ -134,13 +135,13 @@
 						<i class="fa fa-star checked"></i>
 						<i class="fa fa-star-half-alt"></i>
 					</div>
-					<span>$15.99</span>
+					<span>50.000&#8363;</span>
 					<a href="#" class="btn">Add to cart</a>
 				</div>
 
 				<div class="box">
 					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-up"></a>
+					<a href="#" class="fa fa-thumbs-o-up"></a>
 					<img src="images/dish-6.png" alt="">
 					<p>Bánh khoái</p>
 					<div class="stars">
@@ -151,7 +152,7 @@
 						<i class="fa fa-star checked"></i>
 						<i class="fa fa-star-half-alt "></i>
 					</div>
-					<span>$15.99</span>
+					<span>50.000&#8363;</span>
 					<a href="#" class="btn">Add to cart</a>
 				</div>
 			</div>
@@ -161,7 +162,7 @@
 			<h3 class="sub-heading">Về chúng tôi</h3>
 			<h1 class="heading">Món Ăn Nổi Tiếng</h1>
 			<div class="info">
-				<img src="images/about-slide1.png" alt="">
+				<img id="info-click" onclick = "changeImage2()" src="images/about-slide1.png" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum mi turpis, a lacinia urna porttitor sed. Mauris finibus velit mi. Nunc molestie elementum sapien, eget malesuada tortor placerat quis. Proin dapibus hendrerit velit, id mollis nunc. Aenean laoreet lectus nec nulla feugiat, eu rutrum odio volutpat. Ut vehicula, enim et interdum tincidunt, ligula odio faucibus odio, sed commodo urna urna in risus. Suspendisse maximus ipsum metus, ut porttitor turpis consectetur eget. Nam ut gravida nisl. Nulla congue posuere dolor, eget tempor lectus egestas sed. Curabitur iaculis ut orci nec feugiat. Nulla iaculis tincidunt feugiat. Donec laoreet sed nisl et sodales. Nunc non lacus nec tortor laoreet lacinia. Praesent et eros ac lectus fringilla laoreet id in justo. Integer a neque a turpis dictum congue vitae eget ex. Aenean a efficitur arcu.</p>
 			</div>
 		</section>
@@ -269,8 +270,32 @@
 						<a href="#" class="btn">Add to cart</a>
 					</div>
 				</div>
-			</section>	
+			</section>
+			
+			<section class="map">
+				<h1 class="sub-heading">MAP</h1>
+				<img src="images/map.png" alt="">
+			</section>
 	</div>
+	<footer>
+		<ul class="text-footer">
+			<li><a href="#" class="logo-footer"><img src="images/logo.png" alt=""></a></li>
+			<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum mi turpis, a lacinia urna porttitor sed. Mauris finibus velit mi. Nunc molestie elementum sapien, eget malesuada tortor placerat quis. Proin dapibus hendrerit velit, id mollis nunc. Aenean laoreet lectus nec nulla feugiat, eu rutrum odio volutpat. Ut vehicula, enim et interdum tincidunt, ligula odio faucibus odio, sed commodo urna urna in risus. Suspendisse maximus ipsum metus, ut porttitor turpis consectetur eget. Nam ut gravida nisl. Nulla congue posuere dolor, eget tempor lectus egestas sed. Curabitur iaculis ut orci nec feugiat. Nulla iaculis tincidunt feugiat. Donec laoreet sed nisl et sodales. Nunc non lacus nec tortor laoreet lacinia. Praesent et eros ac lectus fringilla laoreet id in justo. Integer a neque a turpis dictum congue vitae eget ex. Aenean a efficitur arcu.</p>
+			</li>
+			<ul class ="list-icons">
+				<li class="icons">
+					<a href="#" class="fa fa-facebook"></a>
+				</li>
+				<li class="icons">
+					<a href="#" class="fa fa-instagram"></a>
+				</li>
+				<li class="icons">
+					<a href="#"class="fa fa-twitter"></a>
+				</li>
+			</ul>
+			
+		</ul>
+	</footer>
 
 </body>
 </html>

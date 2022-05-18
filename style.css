@@ -25,12 +25,6 @@ nav{
 	
 }
 
-/* .logo a {
-	color:#ac0f0f;
-	font-size:20px ;
-	font-family: "UTM Aristote";
-} */
-
 .nav-links{
 	display: flex;
 	justify-content: space-around;
@@ -51,7 +45,7 @@ nav{
 	border: 5px solid rgb(256,222,0);
 	background-color: rgb(256,222,0);
 	border-radius: 10px;
-	
+
 }
 .icons a{
 	color: #ac0f0f;
@@ -123,15 +117,50 @@ nav{
 	margin:.5rem;
 }
 
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap:1.5rem;
+	margin:.5rem;
+}
+
 .dishes .box-container .box{
     padding:1rem 9%;
 	background:rgb(228, 243, 223);
     border-radius: 20px;
-    border:.5rem solid rgb(217, 244, 207);
+	border:.5rem solid rgb(217, 244, 207);
     /* box-shadow: var(box-shadow); */
     position: relative;
     overflow: hidden;
     text-align: center;
+}
+.dishes .box-container .box p{
+	font-size: 25px;
+	cursor: pointer;
+	align-content: center;
+	font-weight: 2em;
+}
+.dishes .box-container .box img{
+    height: 17.5rem;
+    width:fit-content;
+	
+}
+
+.dishes .box-container .box span{
+    font-weight: bolder;
+	color: #ac0f0f;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+.dishes .box-container .box a.btn{
+	border:3px solid rgb(34, 139, 34);
+	background: rgb(34, 139, 34);
+	color: #ffffff;
+	font-weight: light;
+	font-size: 25px;
+	transition: .4s;
+	border-radius: 10px;
+	padding: 3px;
 }
 
 .box:hover{
@@ -149,14 +178,6 @@ nav{
 	font-size: 30px;
 }	
 	
-	
-
-.dishes .box-container .box p{
-	font-size: 25px;
-	cursor: pointer;
-	align-content: center;
-	font-weight: 2em;
-}
 .fa{
 	font-size: 25px;
 	transition: .4px;
@@ -175,38 +196,21 @@ nav{
 	font-size: 40px;
 	color:#bc3b80;
 }
-.dishes .box-container .box img{
-    height:17rem;
-    width: fit-content;
-}
 
-.dishes .box-container .box span{
-    font-weight: bolder;
-	color: #ac0f0f;
-    margin-right: 1rem;
-    font-size: 2.5rem;
-}
-.dishes .box-container .box a.btn{
-	border:solid 6px rgb(256,222,0);
-	background: rgb(256,222,0);
-	color: #ac0f0f;
-	font-weight: bold;
-	font-size: 25px;
-	/* transform: scale(1.3); */
-	transition: .4s;
-	border-radius: 10px;
-	padding: 3px;
-}
-
-.about .info {
+.info {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
 	position:static;
 	margin: 20px 10px;
 
 }
+
 .about img{
   border-radius: 5rem;
+  
+}
+.about .info img{
+	max-width: 80%;
 }
 .about p{
 	line-height: 2;
@@ -257,4 +261,25 @@ nav{
 	transition: .4s;
 	border-radius: 10px;
 	padding: 3px;
+}
+
+.map img{
+	display: block; 
+	margin:0 auto;
+	width: 80%;
+}
+footer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    gap:1.5rem;
+	margin: 2rem 0;
+}
+
+footer img{
+	display: block;
+	margin: 0 auto;
+	grid-column: 1/2;
+}
+.list-icon-inline{
+	text-align: center;
 }
