@@ -238,8 +238,8 @@ nav{
 	font-weight: 2em;
 }
 .todaymenu .box-container .box img{
-    height:17.5rem;
-    width:max-content;
+    height: 17.5rem;
+    width:fit-content;
 }
 
 .todaymenu .box-container .box span{
