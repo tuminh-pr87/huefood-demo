@@ -10,16 +10,16 @@
 </head>
 <body>
 
-<header>
+<header id="header">
 	<nav>
 		<div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 			<ul class="nav-links">
 				<li> <a href="#">Home</a></li>
-				<li> <a href="#">Dish</a></li>
-				<li> <a href="#">About</a> </li>
-				<li> <a href="#">Today's Menu</a> </li>
+				<li> <a href="#dishes">Dish</a></li>
+				<li> <a href="#about">About</a> </li>
+				<li> <a href="#todaymenu">Today's Menu</a> </li>
 				<li> <a href="#">Review</a> </li>
-				<li> <a href="#">Map</a> </li>
+				<li> <a href="#map">Map</a> </li>
 			</ul>
 		<div class="icons">
 			<a href="#" class="fa fa-heart"></a>
@@ -49,7 +49,7 @@
 	<br> 
 	<!-- Làm  tiếp ở đây-->
 	<section class = "dishes" id="dishes">
-		<h3 class="sub-heading">Đặc sản Huế</h3>
+		<h3 class="sub-heading" id="dishes">Đặc sản Huế</h3>
 		<h1 class="heading"> Món Ăn Nổi Tiếng</h1>
 
 		<div class="box-container">
@@ -168,7 +168,7 @@
 			</div>
 		</section>
 
-		<section class = "todaymenu" id="menu">
+		<section class = "todaymenu" id="todaymenu">
 			<h3 class="sub-heading">Thực Đơn</h3>
 			<h1 class="heading">Hôm Nay Có Gì?</h1>
 	
@@ -273,16 +273,15 @@
 				</div>
 			</section>
 			
-			<section class="map">
+			<section class="map" id="map">
 				<h1 class="sub-heading">MAP</h1>
 				<img src="images/map.png" alt="">
 			</section>
 	</div>
-	<footer>
-		<ul class="text-footer">
-			<li><a href="#" class="logo-footer"><img src="images/logo.png" alt=""></a></li>
-			<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum mi turpis, a lacinia urna porttitor sed. Mauris finibus velit mi. Nunc molestie elementum sapien, eget malesuada tortor placerat quis. Proin dapibus hendrerit velit, id mollis nunc. Aenean laoreet lectus nec nulla feugiat, eu rutrum odio volutpat. Ut vehicula, enim et interdum tincidunt, ligula odio faucibus odio, sed commodo urna urna in risus. Suspendisse maximus ipsum metus, ut porttitor turpis consectetur eget. Nam ut gravida nisl. Nulla congue posuere dolor, eget tempor lectus egestas sed. Curabitur iaculis ut orci nec feugiat. Nulla iaculis tincidunt feugiat. Donec laoreet sed nisl et sodales. Nunc non lacus nec tortor laoreet lacinia. Praesent et eros ac lectus fringilla laoreet id in justo. Integer a neque a turpis dictum congue vitae eget ex. Aenean a efficitur arcu.</p>
-			</li>
+	<section class ="footer">
+		<div class="text-footer">
+			<a href="#" class="logo-footer"><img src="images/logo.png" alt=""></a>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum mi turpis, a lacinia urna porttitor sed. Mauris finibus velit mi. Nunc molestie elementum sapien, eget malesuada tortor placerat quis. Proin dapibus hendrerit velit, id mollis nunc. Aenean laoreet lectus nec nulla feugiat, eu rutrum odio volutpat. Ut vehicula, enim et interdum tincidunt, ligula odio faucibus odio, sed commodo urna urna in risus. Suspendisse maximus ipsum metus, ut porttitor turpis consectetur eget. Nam ut gravida nisl. Nulla congue posuere dolor, eget tempor lectus egestas sed. Curabitur iaculis ut orci nec feugiat. Nulla iaculis tincidunt feugiat. Donec laoreet sed nisl et sodales. Nunc non lacus nec tortor laoreet lacinia. Praesent et eros ac lectus fringilla laoreet id in justo. Integer a neque a turpis dictum congue vitae eget ex. Aenean a efficitur arcu.</p>
 			<ul class ="list-icons">
 				<li class="icons">
 					<a href="#" class="fa fa-facebook"></a>
@@ -295,8 +294,8 @@
 				</li>
 			</ul>
 			
-		</ul>
-	</footer>
+		</div>
+	</section>
 
 </body>
 </html>

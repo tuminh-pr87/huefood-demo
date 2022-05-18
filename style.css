@@ -17,6 +17,11 @@ header{
 	overflow: hidden;
 	z-index: 100;
 }
+section{
+    margin: 0 auto;
+	padding: 3rem;
+}
+
 nav{
 	display: flex;
 	justify-content: space-around;
@@ -268,23 +273,7 @@ nav{
 	margin:0 auto;
 	width: 90%;
 }
-footer{
-	display: flex;
-justify-content: flex-end;
-align-items: center;
 
-flex-direction: column;
-
+.footer .text-footer p{
+	text-align: justify;
 }
-
-footer .text-footer{
-	display: flex;
-justify-content: flex-end;
-align-items: center;
-min-height: 100vh;
-flex-direction: column;
-}
-.list-icon-inline{
-	text-align: center;
-}
-
