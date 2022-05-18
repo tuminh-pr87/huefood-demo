@@ -31,11 +31,11 @@ nav{
 	
 }
 
-.logo a {
+/* .logo a {
 	color:#ac0f0f;
 	font-size:20px ;
 	font-family: "UTM Aristote";
-}
+} */
 
 .nav-links{
 	display: flex;
