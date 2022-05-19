@@ -199,9 +199,7 @@ nav{
 	transform: scale(1.5);
 	transition: .6s;
 }
-.box a{
-	
-}
+
 .box a.fa{
 	font-size: 3rem;
 	color:#bc3b80;
