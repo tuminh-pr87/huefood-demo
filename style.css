@@ -374,13 +374,6 @@ nav{
 
 
 /* media queries  */
-@media (max-width:1024px){
-/* 	
-	header nav .nav-links a{
-		
-		font-size: 55%;
-	}
-} */
 @media (max-width:991px){
 
     html{
