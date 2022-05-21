@@ -273,24 +273,24 @@ nav{
 }
 .review .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap:1rem;
 	margin:.5rem;
 }
 
 .review .box-container .box{
     padding:1rem 9%;
-	background:rgb(228, 243, 223);
+	background:rgb(255, 255, 255);
     border-radius: 20px;
-	border:.5rem solid rgb(217, 244, 207);
-    /* box-shadow: var(box-shadow); */
+	border:.5rem solid rgb(183, 185, 183);
+	box-shadow: #3B5998;
     position: relative;
     overflow: hidden;
     text-align: center;
 }
 
 .review .box-container .box .stars .fa{
-	font-size: 2rem;
+	font-size: auto;
 }
 .review .box-container .box p{
 	font-size: 25px;
@@ -299,8 +299,8 @@ nav{
 	font-weight: 2em;
 }
 .review .box-container .box img{
-    height: 17rem;
-    width:max-content;
+    height: 10rem;
+    width:auto;
 	border: none;
 	border-radius: 50%;
 }
