@@ -290,7 +290,7 @@ nav{
 }
 
 .review .box-container .box:hover{
-	background-color: #bc3b80;
+	background-color: rgb(144, 142, 142);
 	color: #eee;
 }
 
