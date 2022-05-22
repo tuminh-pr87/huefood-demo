@@ -63,6 +63,11 @@ nav{
 	font-size:x-large;
 
 } 
+.header-down{
+	display: flex;
+	justify-content:center;
+	align-items: center;	
+}
 
 .search-input{
 	background: #fff;
@@ -96,16 +101,30 @@ nav{
 	font-size: 20px;
 	color: #000;
 	cursor: pointer;
-  }
+}
+
+header .login_out .login, header .login_out p, header .login_out .logout{
+	display: inline-block;
+	font-size: 2rem;
+}
+
+header .login_out{
+	padding: 0 2rem;
+}
+header .login_out .fa{
+	color: #000;
+}
 
 .banner img{
 	width: 100%;
 	
 }
+
 .dot-icon{
 	text-align: center;
 	/* animation-name: dot-click; */
 }
+
 .dot {
   cursor: pointer;
   height: 16px;
@@ -116,11 +135,12 @@ nav{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 .dot:hover {
 	background-color: #717171;
   	animation-name:fade;
   	animation-duration:1.5s;
-  }
+}
 
 .dishes .box-container{
     display: grid;
@@ -461,23 +481,12 @@ nav{
 
 }
 
-/* blockquote {
-	background: #f9f9f9;
-	margin: 1.5em 10px;
-	padding: 0.5em 10px;
-	quotes: "\201C""\201D""\2018""\2019";
-  }
-  blockquote:before {
-	color: #ccc;
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
-  }
-  blockquote p {
-	display: inline;
-  } */
-  .review .box-container .box {
-	  background-color: transparent;
-  }
+@media (max-width:420px){
+	.header-down .login_out{
+		display: none;
+	}
+	.search-input{
+		display: none;
+	}
+}
+
