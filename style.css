@@ -282,7 +282,7 @@ header .login_out .fa{
 .todaymenu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-    gap:1.5rem;
+    gap:1.8rem;
 	margin:.5rem;
 }
 
@@ -325,8 +325,8 @@ header .login_out .fa{
 	padding: 3px;
 }
 .review .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap:1rem;
 	margin:.5rem;
 }
@@ -358,6 +358,9 @@ header .login_out .fa{
 	border-radius: 50%;
 }
 
+.map{
+	padding-bottom: 5em;
+}
 
 .map img{
 	display: block; 
@@ -448,7 +451,7 @@ header .login_out .fa{
     }
 
     section{
-        padding:2rem;
+        padding:2.5rem;
     }
 
 
