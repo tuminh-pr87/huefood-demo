@@ -1,24 +1,3 @@
-// Chuyển slide của banner
-var index = 1;
-changeImage1 = function(){
-	var imgs = ["images/banner0.png","images/banner1.png"];
-	document.getElementById('banner-click').src = imgs[index];
-	index++;
-	if (index == 2){
-		index = 0;
-	}
-} 
-// Chuyển slide của img .about
-var index = 1;
-	changeImage2 = function(){
-		var imgs = ["images/about-slide1.png","images/about-slide2.jpg","images/about-slide3.jpg"];
-		document.getElementById('info-click').src = imgs[index];
-		index++;
-		if (index == 3){
-			index = 0;
-		}
-	}
-
 // Ẩn logo-nav-icons
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -30,3 +9,29 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+// Chuyển slide banner
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > x.length) {slideIndex = 1}
+  
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+	
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
