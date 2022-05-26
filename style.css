@@ -370,7 +370,7 @@ header .login_out .fa{
 
 .footer{
 	display: grid;
-	padding: .5rem;
+	padding: .8rem;
 	grid-template-columns: 1fr 1fr;
 	margin: 0 auto;
 	background:rgb(24, 24, 24);
@@ -382,11 +382,12 @@ header .login_out .fa{
 
 .footer .left-footer p{
 	text-align: justify;
+	font-size: 1.1em;
 	color: #fff;
 	
 }
 .footer .left-footer .span{
-	font-size: 2em;
+	font-size: 2.5em;
 	align-items: center;
 }
 

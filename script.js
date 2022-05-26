@@ -9,7 +9,7 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-// Chuyển slide banner
+// Chuyển slide <>
 var slideIndex = 1;
 showDivs(slideIndex);
 
