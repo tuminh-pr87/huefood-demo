@@ -9,420 +9,420 @@
 </head>
 <body>
 
-<header id="header">
-	<nav>
-		<div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
-			<ul class="nav-links">
-				<li> <a href="#">Home</a></li>
-				<li> <a href="#dishes">Dish</a></li>
-				<li> <a href="#about">About</a> </li>
-				<li> <a href="#todaymenu">Menu</a> </li>
-				<li> <a href="#review">Review</a> </li>
-				<li> <a href="#map">Map</a> </li>
-			</ul>
-		<div class="icons">
-			<a href="#" class="fa fa-heart"></a>
-			<a href="#" class="fa fa-shopping-cart"></a>
-		</div>	
-	</nav>
-	<div class="header-down">
-		<div class="search-input">
-			<a href="" target="_blank" hidden></a>
-			<input type="text" placeholder="Type to search..">
-			<div class="autocom-box">
-			 <!-- here list are inserted from javascript -->
-			</div>
-			<div class="icon"><i class="fa fa-search"></i></div>
-		</div>	
-	
-		<div class="login_out">
-			<div class="login">
-				<i class="fa fa-sign-in"></i>
-			</div>
-			<p>/</p>
-			<div class="logout">
-				<i class="fa fa-sign-out"></i>
+	<header id="header">
+		<nav>
+			<div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+				<ul class="nav-links">
+					<li> <a href="#">Home</a></li>
+					<li> <a href="#dishes">Dish</a></li>
+					<li> <a href="#about">About</a> </li>
+					<li> <a href="#todaymenu">Menu</a> </li>
+					<li> <a href="#review">Review</a> </li>
+					<li> <a href="#map">Map</a> </li>
+				</ul>
+			<div class="icons">
+				<a href="#" class="fa fa-heart"></a>
+				<a href="#" class="fa fa-shopping-cart"></a>
+			</div>	
+		</nav>
+		<div class="header-down">
+			<div class="search-input">
+				<a href="" target="_blank" hidden></a>
+				<input type="text" placeholder="Type to search..">
+				<div class="autocom-box">
+				 <!-- here list are inserted from javascript -->
+				</div>
+				<div class="icon"><i class="fa fa-search"></i></div>
+			</div>	
+		
+			<div class="login_out">
+				<div class="login">
+					<i onclick="myfunction()" class="fa fa-sign-in"></i>
+				</div>
+				<p>/</p>
+				<div class="logout">
+					<i onclick="myFunction()" class="fa fa-sign-out"></i>
+				</div>
 			</div>
 		</div>
-	</div>
 	
-	
-</header>	
+	</header>	
 		
-<div class="content">	
-	 <!-- Slide banner -->
-	<div class="display-container">
-  		<img class="mySlides" src="images/banner0.png">
-  		<img class="mySlides" src="images/banner1.png">
+	<div class="content">	
+		<!-- Slide banner -->
+	   <div class="display-container">
+			 <img class="mySlides" src="images/banner0.png">
+			 <img class="mySlides" src="images/banner1.png">
+   
+			 <button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
+			 <button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
+   
+			 <div class="dot-icons" style="width:100%">
+			   <span class="dot" onclick="currentDiv(1)"></span>
+			   <span class="dot" onclick="currentDiv(2)"></span>
+			 </div>
+	   </div>
+		
+   
+	   <!-- Làm  tiếp ở đây-->
+	   <section class = "dishes" id="dishes">
+		   <h3 class="sub-heading">Đặc sản Huế</h3>
+		   <h1 class="heading">Our Speciality</h1>
+   
+		   <div class="box-container">
+			   <div class="box">
+				   <a href="#" class="fa fa-heart"></a>
+				   <a href="#" class="fa fa-thumbs-o-up"></a>
+				   <img src="images/dish-1.png" alt="">
+				   <p> Bún Bò Huế</p>
+				   <div class="stars">
+					   <i class="fa fa-star checked"></i>
+					   <i class="fa fa-star checked"></i>
+					   <i class="fa fa-star checked"></i>
+					   <i class="fa fa-star checked"></i>
+					   <i class="fa fa-star checked"></i>
+					   <i class="fa fa-star-half-alt"></i>
+				   </div>
+					   <span>50.000&#8363;</span>
+					   <a href="#" class="btn">Add to cart</a>
+				   </div>
+   
+				   <div class="box">
+					   <a href="#" class="fa fa-heart"></a>
+					   <a href="#" class="fa fa-thumbs-o-up"></a>
+					   <img src="images/dish-2.png" alt="">
+					   <p>Cơm hến</p>
+					   <div class="stars">
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star-half-alt"></i>
+					   </div>
+					   <span>50.000&#8363;</span>
+					   <a href="#" class="btn">Add to cart</a>
+				   </div>
+   
+				   <div class="box">
+					   <a href="#" class="fa fa-heart"></a>
+					   <a href="#" class="fa fa-thumbs-o-up"></a>
+					   <img src="images/dish-3.png" alt="">
+					   <p>Chè Huế</p>
+					   <div class="stars">
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star-half-alt"></i>
+					   </div>		
+					   <span>50.000&#8363;</span>
+					   <a href="#" class="btn">Add to cart</a>
+					   </div>
+   
+				   <div class="box">
+					   <a href="#" class="fa fa-heart"></a>
+					   <a href="#" class="fa fa-thumbs-o-up"></a>
+					   <img src="images/dish-4.png" alt="">
+					   <p>Bánh bèo</p>
+					   <div class="stars">
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star-half-alt"></i>
+					   </div>
+					   <div class="order">
+						   <span>50.000&#8363;</span>
+						   <a href="#" class="btn">Add to cart</a>
+					   </div>
+				   </div>
+				   
+				   <div class="box">
+					   <a href="#" class="fa fa-heart"></a>
+					   <a href="#" class="fa fa-thumbs-o-up"></a>
+					   <img src="images/dish-5.png" alt="">
+					   <p>Bún thịt nướng</p>
+					   <div class="stars">
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star-half-alt"></i>
+					   </div>
+					   <span>50.000&#8363;</span>
+					   <a href="#" class="btn">Add to cart</a>
+				   </div>
+   
+				   <div class="box">
+					   <a href="#" class="fa fa-heart"></a>
+					   <a href="#" class="fa fa-thumbs-o-up"></a>
+					   <img src="images/dish-6.png" alt="">
+					   <p>Bánh khoái</p>
+					   <div class="stars">
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star-half-alt "></i>
+					   </div>
+					   <span>50.000&#8363;</span>
+					   <a href="#" class="btn">Add to cart</a>
+				   </div>
+			   </div>
+		   </section>	
+   
+		   <section class="about" id="about">
+			   <h3 class="sub-heading">Về chúng tôi</h3>
+			   <h1 class="heading">About Us</h1>
+			   <div class="info">
+				   <img id="info-click" onclick = "changeImage2()" src="images/about-slide1.png" alt="">
+				   <p>Huế foody là nơi hội tụ những món ăn ngon và đặc sản của Huế. Nhà hàng trang trí không gian bên ngoài và bên trong với các món đồ nội thất, đồ trang trí mang đậm dấu ấn cung đình Huế. Ngay cả bàn ăn cũng được sắp xếp theo chuẩn bàn ăn của quý tộc Huế xưa kia nên cho các thực khách cảm giác đầy quý phái, trang trọng khi thưởng thức bữa ăn. Những món ngon có trong thực đơn của nhà hàng gồm các món đặc sản Huế và nhiều món ăn quen thuộc trong ẩm thực Á, Âu, đáp ứng khẩu vị đa dạng của các thực khách bốn phương. Hue foody có thể phục vụ cùng lúc 400 vị khách nên là địa điểm tổ chức tiệc, đám cưới, hội họp,… quen thuộc với người dân Huế và các nhóm khách du lịch.</p>
+			   </div>
+		   </section>
+   
+		   <section class = "todaymenu" id="todaymenu">
+			   <h3 class="sub-heading">Thực Đơn</h3>
+			   <h1 class="heading">Today's Menu</h1>
+	   
+			   <div class="box-container">
+				   <div class="box">
+					   <a href="#" class="fa fa-heart"></a>
+					   <img src="images/menu-food-1.jpg" alt="">
+					   <p>Bánh mì pate</p>
+					   <div class="stars">
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star checked"></i>
+						   <i class="fa fa-star-half-alt"></i>
+					   </div>
+						   <span>20.000&#8363</span>
+						   <a href="#" class="btn">Add to cart</a>
+					   </div>
+	   
+					   <div class="box">
+						   <a href="#" class="fa fa-heart"></a>
+						   <img src="images/menu-food-2.jpg" alt="">
+						   <p>Chè thốt nốt<table></table></p>
+						   <div class="stars">
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star-half-alt"></i>
+						   </div>
+						   <span>20.000&#8363</span>
+						   <a href="#" class="btn">Add to cart</a>
+					   </div>
+	   
+					   <div class="box">
+						   <a href="#" class="fa fa-heart"></a>
+						   <img src="images/menu-food-3.jpg" alt="">
+						   <p>Xôi xéo</p>
+						   <div class="stars">
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star-half-alt"></i>
+						   </div>		
+						   <span>20.000&#8363</span>
+						   <a href="#" class="btn">Add to cart</a>
+						   </div>
+	   
+					   <div class="box">
+						   <a href="#" class="fa fa-heart"></a>
+						   <img src="images/menu-water-1.jpg" alt="">
+						   <p>Nước cam</p>
+						   <div class="stars">
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star-half-alt"></i>
+						   </div>
+						   <div class="order">
+							   <span>20.000&#8363</span>
+							   <a href="#" class="btn">Add to cart</a>
+						   </div>
+					   </div>
+	   
+					   <div class="box">
+						   <a href="#" class="fa fa-heart"></a>
+						   <img src="images/menu-water-2.jpg" alt="">
+						   <p>Nước chanh</p>
+						   <div class="stars">
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star-half-alt"></i>
+						   </div>
+						   <span>20.000&#8363</span>
+						   <a href="#" class="btn">Add to cart</a>
+					   </div>
+	   
+					   <div class="box">
+						   <a href="#" class="fa fa-heart"></a>
+						   <img src="images/menu-water-3.jpg" alt="">
+						   <p>Sinh tố bơ</p>
+						   <div class="stars">
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star checked"></i>
+							   <i class="fa fa-star-half-alt "></i>
+						   </div>
+						   <span>20.000&#8363</span>
+						   <a href="#" class="btn">Add to cart</a>
+					   </div>
+				   </div>
+			   </section>
+			   <section class="review" id="review">
+				   <h3 class="sub-heading">Nhận xét</h3>
+				   <h1 class="heading">Review</h1>
+				   <div class="box-container">
+					   <div class="box">
+					   <div class="box-flip">
+						   <div class="box-front">
+							   <p>Ngọc Phương</p>
+							   <img src="images/review-girl1.png" alt="">
+							   <div class="stars">
+								   <i class="fa fa-star checked"></i>
+								   <i class="fa fa-star checked"></i>
+								   <i class="fa fa-star checked"></i>
+								   <i class="fa fa-star checked"></i>
+								   <i class="fa fa-star checked"></i>
+								   <i class="fa fa-star checked"></i>
+							   </div>
+						   </div>
+						   <div class="box-back">
+							   <blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
+						   </div>
+					   </div>
+						   
+						   
+					   </div>
+   
+					   <div class="box">
+						   <div class="box-flip">
+							   <div class="box-front">
+								   <p>Quốc Hưng</p>
+								   <img src="images/review-boy1.png" alt="">
+								   <div class="stars">
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+								   </div>
+							   </div>
+							   <div class="box-back">
+									   <blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
+							   </div>
+						   </div>
+					   </div>
+   
+					   <div class="box">
+						   <div class="box-flip">
+							   <div class="box-front">
+								   <p>Hoàng Linh</p>
+								   <img src="images/review-girl2.png" alt="">
+								   <div class="stars">
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+								   </div>
+							   </div>
+							   <div class="box-back">
+									   <blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
+							   </div>
+						   </div>
+					   </div>
+   
+					   <div class="box">
+						   <div class="box-flip">
+							   <div class="box-front">
+								   <p>Phương Thế</p>
+								   <img src="images/review-boy2.png" alt="">
+								   <div class="stars">
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+								   </div>
+							   </div>
+							   <div class="box-back">
+									   <blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
+							   </div>
+						   </div>
+					   </div>
+   
+					   <div class="box">
+						   <div class="box-flip">
+							   <div class="box-front">
+								   <p>Trần Hoàng</p>
+								   <img src="images/review-boy3.png" alt="">
+								   <div class="stars">
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+								   </div>
+							   </div>
+							   <div class="box-back">
+									   <blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
+							   </div>
+						   </div>
+					   </div>
+   
+					   <div class="box">
+						   <div class="box-flip">
+							   <div class="box-front">
+								   <p>Jenny Kim</p>
+								   <img src="images/review-girl3.png" alt="">
+								   <div class="stars">
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+									   <i class="fa fa-star checked"></i>
+								   </div>
+							   </div>
+							   <div class="box-back">
+									   <blockquote>Hue is the most attractive food place.</blockquote>
+							   </div>
+						   </div>
+					   </div>
+			   </section>	
+			   <section class="map" id="map">
+				   <h3 class="sub-heading">Bản đồ</h3>
+				   <h1 class="heading">Map</h1>
+				   <img src="images/map.png" alt="">
+			   </section>
+	   </div>
 
-	  	<button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
-  		<button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
-
-  		<div class="dot-icons" style="width:100%">
-    		<span class="dot" onclick="currentDiv(1)"></span>
-    		<span class="dot" onclick="currentDiv(2)"></span>
-  		</div>
-	</div>
- 	
-
-	<!-- Làm  tiếp ở đây-->
-	<section class = "dishes" id="dishes">
-		<h3 class="sub-heading">Đặc sản Huế</h3>
-		<h1 class="heading">Our Speciality</h1>
-
-		<div class="box-container">
-			<div class="box">
-				<a href="#" class="fa fa-heart"></a>
-				<a href="#" class="fa fa-thumbs-o-up"></a>
-				<img src="images/dish-1.png" alt="">
-				<p> Bún Bò Huế</p>
-				<div class="stars">
-					<i class="fa fa-star checked"></i>
-					<i class="fa fa-star checked"></i>
-					<i class="fa fa-star checked"></i>
-					<i class="fa fa-star checked"></i>
-					<i class="fa fa-star checked"></i>
-					<i class="fa fa-star-half-alt"></i>
-				</div>
-					<span>50.000&#8363;</span>
-					<a href="#" class="btn">Add to cart</a>
-				</div>
-
-				<div class="box">
-					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-o-up"></a>
-					<img src="images/dish-2.png" alt="">
-					<p>Cơm hến</p>
-					<div class="stars">
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star-half-alt"></i>
-					</div>
-					<span>50.000&#8363;</span>
-					<a href="#" class="btn">Add to cart</a>
-				</div>
-
-				<div class="box">
-					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-o-up"></a>
-					<img src="images/dish-3.png" alt="">
-					<p>Chè Huế</p>
-					<div class="stars">
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star-half-alt"></i>
-					</div>		
-					<span>50.000&#8363;</span>
-					<a href="#" class="btn">Add to cart</a>
-					</div>
-
-				<div class="box">
-					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-o-up"></a>
-					<img src="images/dish-4.png" alt="">
-					<p>Bánh bèo</p>
-					<div class="stars">
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star-half-alt"></i>
-					</div>
-					<div class="order">
-						<span>50.000&#8363;</span>
-						<a href="#" class="btn">Add to cart</a>
-					</div>
-				</div>
-				
-				<div class="box">
-					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-o-up"></a>
-					<img src="images/dish-5.png" alt="">
-					<p>Bún thịt nướng</p>
-					<div class="stars">
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star-half-alt"></i>
-					</div>
-					<span>50.000&#8363;</span>
-					<a href="#" class="btn">Add to cart</a>
-				</div>
-
-				<div class="box">
-					<a href="#" class="fa fa-heart"></a>
-					<a href="#" class="fa fa-thumbs-o-up"></a>
-					<img src="images/dish-6.png" alt="">
-					<p>Bánh khoái</p>
-					<div class="stars">
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star-half-alt "></i>
-					</div>
-					<span>50.000&#8363;</span>
-					<a href="#" class="btn">Add to cart</a>
-				</div>
-			</div>
-		</section>	
-
-		<section class="about" id="about">
-			<h3 class="sub-heading">Về chúng tôi</h3>
-			<h1 class="heading">About Us</h1>
-			<div class="info">
-				<img id="info-click" onclick = "changeImage2()" src="images/about-slide1.png" alt="">
-				<p>Huế foody là nơi hội tụ những món ăn ngon và đặc sản của Huế. Nhà hàng trang trí không gian bên ngoài và bên trong với các món đồ nội thất, đồ trang trí mang đậm dấu ấn cung đình Huế. Ngay cả bàn ăn cũng được sắp xếp theo chuẩn bàn ăn của quý tộc Huế xưa kia nên cho các thực khách cảm giác đầy quý phái, trang trọng khi thưởng thức bữa ăn. Những món ngon có trong thực đơn của nhà hàng gồm các món đặc sản Huế và nhiều món ăn quen thuộc trong ẩm thực Á, Âu, đáp ứng khẩu vị đa dạng của các thực khách bốn phương. Hue foody có thể phục vụ cùng lúc 400 vị khách nên là địa điểm tổ chức tiệc, đám cưới, hội họp,… quen thuộc với người dân Huế và các nhóm khách du lịch.</p>
-			</div>
-		</section>
-
-		<section class = "todaymenu" id="todaymenu">
-			<h3 class="sub-heading">Thực Đơn</h3>
-			<h1 class="heading">Today's Menu</h1>
-	
-			<div class="box-container">
-				<div class="box">
-					<a href="#" class="fa fa-heart"></a>
-					<img src="images/menu-food-1.jpg" alt="">
-					<p>Bánh mì pate</p>
-					<div class="stars">
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star checked"></i>
-						<i class="fa fa-star-half-alt"></i>
-					</div>
-						<span>20.000&#8363</span>
-						<a href="#" class="btn">Add to cart</a>
-					</div>
-	
-					<div class="box">
-						<a href="#" class="fa fa-heart"></a>
-						<img src="images/menu-food-2.jpg" alt="">
-						<p>Chè thốt nốt<table></table></p>
-						<div class="stars">
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star-half-alt"></i>
-						</div>
-						<span>20.000&#8363</span>
-						<a href="#" class="btn">Add to cart</a>
-					</div>
-	
-					<div class="box">
-						<a href="#" class="fa fa-heart"></a>
-						<img src="images/menu-food-3.jpg" alt="">
-						<p>Xôi xéo</p>
-						<div class="stars">
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star-half-alt"></i>
-						</div>		
-						<span>20.000&#8363</span>
-						<a href="#" class="btn">Add to cart</a>
-						</div>
-	
-					<div class="box">
-						<a href="#" class="fa fa-heart"></a>
-						<img src="images/menu-water-1.jpg" alt="">
-						<p>Nước cam</p>
-						<div class="stars">
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star-half-alt"></i>
-						</div>
-						<div class="order">
-							<span>20.000&#8363</span>
-							<a href="#" class="btn">Add to cart</a>
-						</div>
-					</div>
-	
-					<div class="box">
-						<a href="#" class="fa fa-heart"></a>
-						<img src="images/menu-water-2.jpg" alt="">
-						<p>Nước chanh</p>
-						<div class="stars">
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star-half-alt"></i>
-						</div>
-						<span>20.000&#8363</span>
-						<a href="#" class="btn">Add to cart</a>
-					</div>
-	
-					<div class="box">
-						<a href="#" class="fa fa-heart"></a>
-						<img src="images/menu-water-3.jpg" alt="">
-						<p>Sinh tố bơ</p>
-						<div class="stars">
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star checked"></i>
-							<i class="fa fa-star-half-alt "></i>
-						</div>
-						<span>20.000&#8363</span>
-						<a href="#" class="btn">Add to cart</a>
-					</div>
-				</div>
-			</section>
-			<section class="review" id="review">
-				<h3 class="sub-heading">Nhận xét</h3>
-				<h1 class="heading">Review</h1>
-				<div class="box-container">
-					<div class="box">
-					<div class="box-flip">
-						<div class="box-front">
-							<p>Ngọc Phương</p>
-							<img src="images/review-girl1.png" alt="">
-							<div class="stars">
-								<i class="fa fa-star checked"></i>
-								<i class="fa fa-star checked"></i>
-								<i class="fa fa-star checked"></i>
-								<i class="fa fa-star checked"></i>
-								<i class="fa fa-star checked"></i>
-								<i class="fa fa-star checked"></i>
-							</div>
-						</div>
-						<div class="box-back">
-							<blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
-						</div>
-					</div>
-						
-						
-					</div>
-
-					<div class="box">
-						<div class="box-flip">
-							<div class="box-front">
-								<p>Quốc Hưng</p>
-								<img src="images/review-boy1.png" alt="">
-								<div class="stars">
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-								</div>
-							</div>
-							<div class="box-back">
-									<blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
-							</div>
-						</div>
-					</div>
-
-					<div class="box">
-						<div class="box-flip">
-							<div class="box-front">
-								<p>Hoàng Linh</p>
-								<img src="images/review-girl2.png" alt="">
-								<div class="stars">
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-								</div>
-							</div>
-							<div class="box-back">
-									<blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
-							</div>
-						</div>
-					</div>
-
-					<div class="box">
-						<div class="box-flip">
-							<div class="box-front">
-								<p>Phương Thế</p>
-								<img src="images/review-boy2.png" alt="">
-								<div class="stars">
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-								</div>
-							</div>
-							<div class="box-back">
-									<blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
-							</div>
-						</div>
-					</div>
-
-					<div class="box">
-						<div class="box-flip">
-							<div class="box-front">
-								<p>Trần Hoàng</p>
-								<img src="images/review-boy3.png" alt="">
-								<div class="stars">
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-								</div>
-							</div>
-							<div class="box-back">
-									<blockquote>Ẩm thực ở đây thật đa dạng và phong phú.</blockquote>
-							</div>
-						</div>
-					</div>
-
-					<div class="box">
-						<div class="box-flip">
-							<div class="box-front">
-								<p>Jenny Kim</p>
-								<img src="images/review-girl3.png" alt="">
-								<div class="stars">
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-									<i class="fa fa-star checked"></i>
-								</div>
-							</div>
-							<div class="box-back">
-									<blockquote>Hue is the most attractive food place.</blockquote>
-							</div>
-						</div>
-					</div>
-			</section>	
-			<section class="map" id="map">
-				<h3 class="sub-heading">Bản đồ</h3>
-				<h1 class="heading">Map</h1>
-				<img src="images/map.png" alt="">
-			</section>
-	</div>
-	<footer>
+	   <footer>
 		<section class ="footer">
 			<div class="left-footer">
 				<a href="#" class="left-footer"><img src="images/logo.png" alt=""></a>
@@ -450,7 +450,7 @@
 		</section>
 		<div class="bottom-footer">
 			<p>Copyright © 2022 by NHOM1 - All rights reserved!</p>
-		</div>
+		</div>		
 	</footer>
 </body>
 </html>

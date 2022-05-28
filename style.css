@@ -189,7 +189,6 @@ header .login_out .fa{
 	background:rgb(228, 243, 223);
     border-radius: 20px;
 	border:.5rem solid rgb(217, 244, 207);
-    /* box-shadow: var(box-shadow); */
     position: relative;
     overflow: hidden;
     text-align: center;

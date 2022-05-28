@@ -34,4 +34,10 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
-
+//Thông báo login
+function myfunction(){
+	alert("Bạn đã đăng nhập vào Huế Foody!");
+}
+function myFunction(){
+	alert("Bạn đã đăng xuất!");
+}
