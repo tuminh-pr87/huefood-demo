@@ -11,18 +11,18 @@
 
 	<header id="header">
 		<nav>
-			<div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<div class="logo" title="Logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 				<ul class="nav-links">
-					<li> <a href="#">Home</a></li>
-					<li> <a href="#dishes">Dish</a></li>
-					<li> <a href="#about">About</a> </li>
-					<li> <a href="#todaymenu">Menu</a> </li>
-					<li> <a href="#review">Review</a> </li>
-					<li> <a href="#map">Map</a> </li>
+					<li> <a href="#" title="Trang chủ">Home</a></li>
+					<li> <a href="#dishes" title="Đặc sản">Dish</a></li>
+					<li> <a href="#about" title="Giới thiệu">About</a> </li>
+					<li> <a href="#todaymenu" title="Thực đơn">Menu</a> </li>
+					<li> <a href="#review" title="Nhận xét">Review</a> </li>
+					<li> <a href="#map" title="Bản đồ">Map</a> </li>
 				</ul>
 			<div class="icons">
-				<a href="#" class="fa fa-heart"></a>
-				<a href="#" class="fa fa-shopping-cart"></a>
+				<a href="#" class="fa fa-heart" title="Love/Yêu thích"></a>
+				<a href="#" class="fa fa-shopping-cart" title="Cart/Giỏ hàng"></a>
 			</div>	
 		</nav>
 		<div class="header-down">
@@ -32,15 +32,15 @@
 				<div class="autocom-box">
 				 <!-- here list are inserted from javascript -->
 				</div>
-				<div class="icon"><i class="fa fa-search"></i></div>
+				<div class="icon" title="Search/Tìm kiếm"><i class="fa fa-search"></i></div>
 			</div>	
 		
 			<div class="login_out">
-				<div class="login">
+				<div class="login" title="Log in/Đăng nhập">
 					<i onclick="myfunction()" class="fa fa-sign-in"></i>
 				</div>
 				<p>/</p>
-				<div class="logout">
+				<div class="logout" title="Log out/Đăng xuất">
 					<i onclick="myFunction()" class="fa fa-sign-out"></i>
 				</div>
 			</div>
@@ -54,8 +54,8 @@
 			 <img class="mySlides" src="images/banner0.png">
 			 <img class="mySlides" src="images/banner1.png">
    
-			 <button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
-			 <button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
+			 <button class="image-button button-left" title="Previous/Trước" onclick="plusDivs(-1)">&#10094;</button>
+			 <button class="image-button button-right" title="Next/Kế tiếp" onclick="plusDivs(1)">&#10095;</button>
    
 			 <div class="dot-icons" style="width:100%">
 			   <span class="dot" onclick="currentDiv(1)"></span>
@@ -84,7 +84,7 @@
 					   <i class="fa fa-star-half-alt"></i>
 				   </div>
 					   <span>50.000&#8363;</span>
-					   <a href="#" class="btn">Add to cart</a>
+					   <a href="#"  onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 				   </div>
    
 				   <div class="box">
@@ -101,7 +101,7 @@
 						   <i class="fa fa-star-half-alt"></i>
 					   </div>
 					   <span>50.000&#8363;</span>
-					   <a href="#" class="btn">Add to cart</a>
+					   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 				   </div>
    
 				   <div class="box">
@@ -118,7 +118,7 @@
 						   <i class="fa fa-star-half-alt"></i>
 					   </div>		
 					   <span>50.000&#8363;</span>
-					   <a href="#" class="btn">Add to cart</a>
+					   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 					   </div>
    
 				   <div class="box">
@@ -136,7 +136,7 @@
 					   </div>
 					   <div class="order">
 						   <span>50.000&#8363;</span>
-						   <a href="#" class="btn">Add to cart</a>
+						   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 					   </div>
 				   </div>
 				   
@@ -154,7 +154,7 @@
 						   <i class="fa fa-star-half-alt"></i>
 					   </div>
 					   <span>50.000&#8363;</span>
-					   <a href="#" class="btn">Add to cart</a>
+					   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 				   </div>
    
 				   <div class="box">
@@ -171,7 +171,7 @@
 						   <i class="fa fa-star-half-alt "></i>
 					   </div>
 					   <span>50.000&#8363;</span>
-					   <a href="#" class="btn">Add to cart</a>
+					   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 				   </div>
 			   </div>
 		   </section>	
@@ -180,8 +180,8 @@
 			   <h3 class="sub-heading">Về chúng tôi</h3>
 			   <h1 class="heading">About Us</h1>
 			   <div class="info">
-				   <img id="info-click" onclick = "changeImage2()" src="images/about-slide1.png" alt="">
-				   <p>Huế foody là nơi hội tụ những món ăn ngon và đặc sản của Huế. Nhà hàng trang trí không gian bên ngoài và bên trong với các món đồ nội thất, đồ trang trí mang đậm dấu ấn cung đình Huế. Ngay cả bàn ăn cũng được sắp xếp theo chuẩn bàn ăn của quý tộc Huế xưa kia nên cho các thực khách cảm giác đầy quý phái, trang trọng khi thưởng thức bữa ăn. Những món ngon có trong thực đơn của nhà hàng gồm các món đặc sản Huế và nhiều món ăn quen thuộc trong ẩm thực Á, Âu, đáp ứng khẩu vị đa dạng của các thực khách bốn phương. Hue foody có thể phục vụ cùng lúc 400 vị khách nên là địa điểm tổ chức tiệc, đám cưới, hội họp,… quen thuộc với người dân Huế và các nhóm khách du lịch.</p>
+				   <img src="images/about-slide.png" alt="">
+				   <p>Huế Foody là nơi hội tụ những món ăn ngon và đặc sản của Huế. Nhà hàng trang trí không gian bên ngoài và bên trong với các món đồ nội thất, đồ trang trí mang đậm dấu ấn cung đình Huế. Ngay cả bàn ăn cũng được sắp xếp theo chuẩn bàn ăn của quý tộc Huế xưa kia nên cho các thực khách cảm giác đầy quý phái, trang trọng khi thưởng thức bữa ăn. Những món ngon có trong thực đơn của nhà hàng gồm các món đặc sản Huế và nhiều món ăn quen thuộc trong ẩm thực Á, Âu, đáp ứng khẩu vị đa dạng của các thực khách bốn phương. Hue foody có thể phục vụ cùng lúc 400 vị khách nên là địa điểm tổ chức tiệc, đám cưới, hội họp, ... quen thuộc với người dân Huế và các nhóm khách du lịch.</p>
 			   </div>
 		   </section>
    
@@ -203,7 +203,7 @@
 						   <i class="fa fa-star-half-alt"></i>
 					   </div>
 						   <span>20.000&#8363</span>
-						   <a href="#" class="btn">Add to cart</a>
+						   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 					   </div>
 	   
 					   <div class="box">
@@ -219,7 +219,7 @@
 							   <i class="fa fa-star-half-alt"></i>
 						   </div>
 						   <span>20.000&#8363</span>
-						   <a href="#" class="btn">Add to cart</a>
+						   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 					   </div>
 	   
 					   <div class="box">
@@ -235,7 +235,7 @@
 							   <i class="fa fa-star-half-alt"></i>
 						   </div>		
 						   <span>20.000&#8363</span>
-						   <a href="#" class="btn">Add to cart</a>
+						   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 						   </div>
 	   
 					   <div class="box">
@@ -252,7 +252,7 @@
 						   </div>
 						   <div class="order">
 							   <span>20.000&#8363</span>
-							   <a href="#" class="btn">Add to cart</a>
+							   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 						   </div>
 					   </div>
 	   
@@ -269,7 +269,7 @@
 							   <i class="fa fa-star-half-alt"></i>
 						   </div>
 						   <span>20.000&#8363</span>
-						   <a href="#" class="btn">Add to cart</a>
+						   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 					   </div>
 	   
 					   <div class="box">
@@ -285,7 +285,7 @@
 							   <i class="fa fa-star-half-alt "></i>
 						   </div>
 						   <span>20.000&#8363</span>
-						   <a href="#" class="btn">Add to cart</a>
+						   <a href="#" onclick="addToCart()" class="btn" title="Thêm vào giỏ hàng">Add to cart</a>
 					   </div>
 				   </div>
 			   </section>
@@ -426,12 +426,12 @@
 		<section class ="footer">
 			<div class="left-footer">
 				<a href="#" class="left-footer"><img src="images/logo.png" alt=""></a>
-				<p class="left-footer">Huế foody là nơi hội tụ những món ăn ngon và đặc sản của Huế. Nhà hàng trang trí không gian bên ngoài và bên trong với các món đồ nội thất, đồ trang trí mang đậm dấu ấn cung đình Huế. Ngay cả bàn ăn cũng được sắp xếp theo chuẩn bàn ăn của quý tộc Huế xưa kia nên cho các thực khách cảm giác đầy quý phái, trang trọng khi thưởng thức bữa ăn. Những món ngon có trong thực đơn của nhà hàng gồm các món đặc sản Huế và nhiều món ăn quen thuộc trong ẩm thực Á, Âu, đáp ứng khẩu vị đa dạng của các thực khách bốn phương. Hue foody có thể phục vụ cùng lúc 400 vị khách nên là địa điểm tổ chức tiệc, đám cưới, hội họp,… quen thuộc với người dân Huế và các nhóm khách du lịch.</p>
+				<p class="left-footer">Huế Foody là nơi hội tụ những món ăn ngon và đặc sản của Huế. Nhà hàng trang trí không gian bên ngoài và bên trong với các món đồ nội thất, đồ trang trí mang đậm dấu ấn cung đình Huế. Ngay cả bàn ăn cũng được sắp xếp theo chuẩn bàn ăn của quý tộc Huế xưa kia nên cho các thực khách cảm giác đầy quý phái, trang trọng khi thưởng thức bữa ăn. Những món ngon có trong thực đơn của nhà hàng gồm các món đặc sản Huế và nhiều món ăn quen thuộc trong ẩm thực Á, Âu, đáp ứng khẩu vị đa dạng của các thực khách bốn phương. Hue foody có thể phục vụ cùng lúc 400 vị khách nên là địa điểm tổ chức tiệc, đám cưới, hội họp, ... quen thuộc với người dân Huế và các nhóm khách du lịch.</p>
 				<div class="left-footer">
 					<div class="span">
-					<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-					<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-					<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+					<a href="https://www.facebook.com/" title="Facebook" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/" title="Instagram" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://twitter.com/" title="Twitter" target="_blank" class="fa fa-twitter"></a>
 					</div>
 				</div>
 			</div>
@@ -452,5 +452,6 @@
 			<p>Copyright © 2022 by NHOM1 - All rights reserved!</p>
 		</div>		
 	</footer>
+	<a style="display: scroll; position: fixed; bottom: 3px; right: 7px;" title="Back To Top" href="#"><img src="images/backToTop.png" width="45" height="45" alt="" /></a>
 </body>
 </html>

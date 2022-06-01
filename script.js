@@ -36,8 +36,8 @@ function showDivs(n) {
 }
 //Thông báo login
 function myfunction(){
-	alert("Bạn đã đăng nhập vào Huế Foody!");
-}
+	alert("Bạn đã đăng nhập vào Huế Foody!\n(You are logged in to Hue Foody!)");
+} 
 function myFunction(){
-	alert("Bạn đã đăng xuất!");
+	alert("Bạn đã đăng xuất!\n(You are logged out!)");
 }
